@@ -1,10 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My first website</title>
+    <title>Cross Course Project</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="This is html and css project"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
+  <body class="grid">
+    <header>
+      <!--LOGO-->
+      <div id="main_menu">
+        <img
+          src="images/SquareEyes_Logo.png"
+          alt="Logo"
+          class="logo"
+        />
+      </div>
+       <!--SEARCH BAR-->
+       <div id="search" class="search">
+        <input type="text" placeholder="search" />
+      </div>
+      <div id="searchnav">
+        <label for="searchicon"
+          ><i class="fas fa-search"></i
+        ></label>
+      </div>
+      <!--NAVIGATION-->
+      <nav id="hamnav">
+        <!--HAMBURGER ICON-->
+        <label for="hamburger"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input type="checkbox" id="hamburger" />
+        <!--NAVIGATION ITEMS-->
+        <ul id="hamitems">
+          <li><a href="a.html">Home</a></li>
+          <li><a href="a.html">Producer</a></li>
+          <li><a href="a.html">Movies</a></li>
+      </nav>
+     
+       <!--CTA-BUTTONS-->
+      <div class="cta">
+        <button class="cta-login">Log In</button>
+        <button class="cta-signup">Sign Up</button>
+      </div>
+    </header>
+    <main>
+      <div>
+        <h2>Square Eyes Design</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Cumque iusto vel qui officiis illo,
+          repellendus nihil, consectetur ut fugit amet sit
+          veritatis, aspernatur at numquam totam rerum
+          fugiat neque exercitationem.
+        </p>
+        <div>
+          <button class="cta-readmore">
+            <a href="a.html">Read more</a></button>
+          
+        </div>
+      </div>
+    </main>
+    <aside>
+      <h3>Aside</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Id quas culpa quam alias, quia earum sit
+        tenetur nihil commodi explicabo quasi, possimus
+        adipisci asperiores cupiditate consequatur
+        perspiciatis ad expedita necessitatibus?
+      </p>
+    </aside>
+    <section id="content1"></section>
+    <section id="content2"></section>
+    <section id="content3"></section>
   </body>
 </html>
