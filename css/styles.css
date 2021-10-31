@@ -5,18 +5,18 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: url("../images/camera.jpg");
+  background: url("../images/camera1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
   height: 100vh;
   overflow-y: hidden;
   display: grid;
   grid-gap: 1em;
   grid-column: 1fr 1fr 1fr;
-  grid-row: 1fr 1fr 1fr 1fr;
+  grid-row: 0.2fr 1fr 1fr;
   grid-template-areas:
     "header header header"
+    "main main aside"
     "main main aside"
     "main main aside"
     "content1 content2 content3";
@@ -25,11 +25,10 @@ header {
   display: flex;
   background-color: #292828;
   width: auto;
-  height: 8vh;
+  height: 70px;
   padding: 10px;
   position: relative;
   align-items: center;
-  justify-content: space-evenly;
   grid-area: header;
 }
 /* Main & Aside */
@@ -43,9 +42,10 @@ aside {
 }
 main,
 aside {
-  background: #292828;
+  background: rgb(36, 36, 36);
   padding: 1em 2em;
   color: white;
+  border-radius: 5px;
 }
 /* Content 1,2,3 */
 #content1,
@@ -53,6 +53,7 @@ aside {
 #content3 {
   margin-bottom: 10px;
   height: 250px;
+  border-radius: 5px;
 }
 #content1 {
   grid-area: content1;
@@ -85,7 +86,9 @@ label:hover {
   display: block;
   flex: 1;
   cursor: pointer;
+  margin-left: 20px;
 }
+
 /* NAVIGATION */
 #hamnav {
   width: 100%;
@@ -96,8 +99,8 @@ label:hover {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  flex-grow: 1;
-  flex-basis: 0;
+  margin-right: 20px;
+  padding: 15px;
 }
 #hamitems li {
   list-style: none;
@@ -105,16 +108,17 @@ label:hover {
 }
 #hamitems a {
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   letter-spacing: 1px;
-  font-size: 22px;
+  font-size: 24px;
   text-align: center;
   padding: 10px;
 }
 #hamitems a:hover {
   background: orange;
-  font-weight: 500;
+  font-weight: 400;
+  border-radius: 2px;
 }
 #hamburger,
 #hamnav label {
@@ -122,19 +126,16 @@ label:hover {
 }
 /* Searchbar */
 .search {
-  align-items: center;
   flex: 1;
-  padding-left: 10px;
 }
 .search input {
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 25px;
+  width: 270px;
+  height: 26px;
   color: black;
   outline: none;
   border-radius: 4px;
-  margin-left: 30px;
+  margin-left: 50px;
+  float: right;
 }
 #searchnav {
   display: none;
@@ -145,25 +146,31 @@ label:hover {
 /* CTA-Buttons */
 .cta {
   display: flex;
-  flex: 1;
-  justify-content: space-evenly;
+  margin-right: 20px;
 }
 .cta-login,
 .cta-signup {
   text-align: center;
-  color: #580808;
+  text-transform: uppercase;
+  color: #7b0000;
   font-weight: bold;
   font-size: 18px;
   border: 1px solid #fcad15;
   background: #fcad15;
-  width: 80px;
-  height: 40px;
+  width: 90px;
+  height: 45px;
   margin: 10px;
   cursor: pointer;
   border-radius: 2px;
+  padding: 5px;
+}
+.cta-login:hover,
+.cta-signup:hover {
+  background: #7b0000;
+  color: #fcad15;
 }
 .cta-readmore {
-  width: 100px;
+  width: 110px;
   height: 40px;
   background: #fcad15;
   border: 1px solid #fcad15;
@@ -171,44 +178,46 @@ label:hover {
   float: right;
   cursor: pointer;
   margin-top: 20px;
+  padding: 5px;
 }
 .cta-readmore a {
   text-decoration: none;
-  color: #580808;
+  color: #7b0000;
   font-weight: bold;
   font-size: 18px;
 }
 
 /* TABLET SCREEN */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   body {
+    padding-bottom: 30px;
+    height: auto;
     overflow-x: hidden;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+    overflow-y: scroll;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr;
     grid-template-areas:
       "header header"
       "main main"
-      "main main"
-      "content1 content1";
-  }
-  aside,
-  #content2,
-  #content3 {
-    display: none;
+      "content1 content1"
+      "content2 content2";
   }
   #content1 {
-    margin-top: 10px;
-    height: 70%;
-    width: 90%;
     margin-right: 30px;
     margin-left: 40px;
+  }
+  #content2 {
+    margin: 0px 30px 0px 40px;
+    position: relative;
+    top: -15px;
   }
   main {
     margin-top: 10px;
     margin-right: 30px;
   }
-  header {
-    height: 8vh;
+  aside,
+  #content3 {
+    display: none;
   }
   /* Logo */
   .logo {
@@ -220,19 +229,23 @@ label:hover {
   }
   /* Hamburger-menu */
   #hamitems {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 94px;
+    position: relative;
+    right: -45px;
+    top: 127px;
+    float: right;
+  }
+  #hamitems li {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 5px;
+    display: flex;
   }
   #hamitems a {
+    margin-top: -5px;
     right: 0px;
-    height: 5vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #292828;
+    background: #292828;
     width: 100%;
-    padding: 15px;
     font-size: 10px;
   }
   #hamnav label {
@@ -268,23 +281,54 @@ label:hover {
     top: 30px;
   }
   /* CTA-Buttons */
+  .cta {
+    flex-direction: column;
+    position: absolute;
+    left: 20px;
+  }
   .cta-login,
   .cta-signup {
-    width: 70px;
-    float: left;
-    position: absolute;
-    top: 20px;
+    padding: 5px;
+    width: 90px;
+    height: 30px;
+    right: 10px;
+    font-size: 1px;
   }
   .cta-login {
-    right: 85%;
+    right: 83%;
+    margin-bottom: 0px;
   }
   .cta-signup {
-    right: 74%;
+    right: 68%;
   }
 }
 
 /* MOBILE SCREEN */
 @media only screen and (max-width: 426px) {
+  body {
+    padding: 0px 0px 20px 0px;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "content1"
+      "content2";
+  }
+  #content1 {
+    margin-right: 30px;
+    margin-left: 40px;
+  }
+  #content2 {
+    margin: 0px 30px 0px 40px;
+  }
+  main {
+    margin-top: 10px;
+    margin-right: 30px;
+  }
   .logo {
     position: absolute;
     left: 36%;
@@ -293,20 +337,15 @@ label:hover {
     position: absolute;
     left: 6%;
   }
-  .cta {
+  .cta-login,
+  .cta-signup {
     display: none;
   }
-  main {
-    margin-right: 40px;
-  }
+
   main h2 {
     font-size: 25px;
   }
   main p {
     font-size: 5px;
-  }
-  #content1 {
-    margin-right: 40px;
-    width: auto;
   }
 }
