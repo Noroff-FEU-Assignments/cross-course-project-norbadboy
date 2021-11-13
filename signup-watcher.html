@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cross Course Project Signup</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="Signup SquareEyes"
+      content="This is html and css project"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/signup.css" />
+    <link rel="stylesheet" href="/css/signup-account.css" />
+  </head>
+  <body>
+    <header>
+      <!--LOGO-->
+      <div class="logo">
+        <a href="index.html">
+          <img
+          src="images/SquareEyes_Logo.png"
+          alt="Logo">
+        </a>
+      </div>
+       <!--SEARCH BAR-->
+       <div class="search">
+        <input type="text" placeholder="search" />
+      </div>
+      <div class="searchnav">
+        <label for="searchicon"
+          ><i class="fas fa-search"></i> 
+        </label>
+      </div>
+      <!--NAVIGATION-->
+      <nav class="hamnav">
+        <!--HAMBURGER ICON-->
+        <label for="hamburger"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger" />
+        <!--NAVIGATION ITEMS-->
+        <ul class="hamitems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Producers</a></li>
+          <li><a href="movie-list.html">Movies</a></li>
+      </nav>
+       <!--CTA-BUTTONS-->
+      <div class="cta">
+        <button class="cta-login" onclick="window.location.href='login.html'">Login</button>
+        <button class="cta-signup" onclick="window.location.href='signup.html'">Sign Up</button>      </div>
+    </header>
+    <main>
+        <div class="watcher-account--container">
+            <section>
+                <div class="watcher-account--body">
+                    <h1>Watcher account</h1>
+                <form action="#">
+                        <div class="input-box">
+                            <label for="email">Email</label><br>
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                        <div class="input-box">
+                            <label for="username">Username</label><br>
+                            <input type="text" placeholder="Enter your username">
+                        </div>
+                        <div class="input-box">
+                            <label for="pwd">Password</label><br>
+                            <input type="password" name="pwd" placeholder="Enter your password">
+                        </div>
+                    <div class="input-box">
+                        <label for="birthday">Birthday</label><br>
+                        <input type="date" name="birthday"
+                               value="2021-11-14"
+                               min="1993-01-01" max="2021-12-31">
+                    </div>
+                    <div class="gender-details">
+                        <div>
+                            <label for="gender"></label><br>
+                            <input type="radio" name="gender" value="male"> Male<br>
+                        </div>
+                        <div>
+                            <label for="gender"></label><br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                        </div>
+                        <div>
+                            <label for="gender"></label><br>
+                            <input type="radio" name="gender" value="other"> Other
+                        </div>
+                    </div>
+                </form>
+                <div class="create-cta">
+                    <button class="cta-login">Create Watcher Account</button>
+                </div>
+                </div>  
+            </section>
+            <section>
+                <div class="watcher-account--body">
+                    <h1>Benefits of watcher account</h1> 
+                    <div class="watcher-account--benefits">
+                        <div>
+                            <h2>Personalized Recommendations</h2>
+                            <p>Discover films you’ll love.</p>
+                        </div>
+                        <div>
+                            <h2>Your watchlist</h2>
+                            <p>Track everything you want to watch.</p>
+                        </div>
+                        <div>
+                            <h2>Your ratings</h2>
+                            <p>Rate and remember everything you’ve seen.</p>
+                        </div>  
+                    </div>
+                </div>      
+            </section>
+        </div>
+    </main>
+</body>
+</html>

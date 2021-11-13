@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cross Course Project</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Homepage SquareEyes" content="This is html and css project" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@100&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/account.css" />
+  </head>
+  <body>
+    <header>
+      <!--LOGO-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/SquareEyes_Logo.png" alt="Logo" />
+        </a>
+      </div>
+      <!--SEARCH BAR-->
+      <div class="search">
+        <input type="text" placeholder="search" />
+      </div>
+      <div class="searchnav">
+        <label for="searchicon"><i class="fa fa-search"></i> </label>
+      </div>
+      <!--NAVIGATION-->
+      <nav class="hamnav">
+        <!--HAMBURGER ICON-->
+        <label for="hamburger"><i class="fa fa-bars"></i></label>
+        <input type="checkbox" id="hamburger" />
+        <!--NAVIGATION ITEMS-->
+        <ul class="hamitems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Producers</a></li>
+          <li><a href="movie-list.html">Movies</a></li>
+        </ul>
+      </nav>
+      <!--CTA-BUTTONS-->
+      <div class="cta">
+        <button class="cta-login" onclick="window.location.href='login.html'">Login</button>
+        <button class="cta-signup" onclick="window.location.href='signup.html'">Sign Up</button>
+      </div>
+    </header>
+    <main class="account--main">
+      <div class="account--body">
+        <section class="account--settings">
+          <h2>Account settings</h2>
+          <h2>Watchlist</h2>
+          <h2>Reviews & Comments</h2>
+        </section>
+        <hr class="hr-orange" />
+        <hr class="hr-white" />
+        <section class="account--personal-details">
+          <div>
+            <h1>Personal Details</h1>
+            <p>This section contains your basic profile information like name, email etc.</p>
+          </div>
+          <div class="account--profile-pic">
+            <h2>Profile Picture</h2>
+            <div class="account--profile-pic-body">
+              <div class="dot"></div>
+              <div class="account--button-text">
+                <div class="button">
+                  <button class="cta-login">Account settings</button>
+                  <button class="cta-login">Remove</button>
+                </div>
+                <p>You can upload jpg, gif or png image files.</p>
+              </div>
+            </div>
+          </div>
+          <div class="account--details-box">
+            <form action="#">
+                <div class="name-box">
+                    <div class="input-box">
+                        <label for="name">First Name</label><br>
+                        <input type="text" >
+                    </div>
+                    <div class="input-box">
+                        <label for="name">Last name</label><br>
+                        <input type="text">
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email Address</label><br>
+                        <input type="text">
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Phone Number</label><br>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="birthday">Birthday</label><br>
+                    <input type="date" name="birthday"
+                           value="2021-11-14"
+                           min="1993-01-01" max="2021-12-31">
+                </div>
+                <div class="gender-details">
+                    <div>
+                        <label for="gender"></label><br>
+                        <input type="radio" name="gender" value="male"> Male<br>
+                    </div>
+                    <div>
+                        <label for="gender"></label><br>
+                        <input type="radio" name="gender" value="female"> Female<br>
+                    </div>
+                    <div>
+                        <label for="gender"></label><br>
+                        <input type="radio" name="gender" value="other"> Other
+                    </div>
+                </div>
+            </form>
+            <div>
+                <button class="cta-login">Save changes</button>
+            </div>
+            </div>  
+        </section>
+        <hr class="hr-password" />
+        <section class="account--password">
+            <h1>Password</h1>
+            <div class="input-box-password">
+                <label for="pwd">Current Password</label><br>
+                <input type="password" name="pwd" placeholder="Enter your password">
+            </div>
+            <div class="input-box-password">
+                <label for="pwd">New Password</label><br>
+                <input type="password" name="pwd" placeholder="Enter your password">
+            </div>
+            <div>
+                <button class="cta-login">Change password</button>
+            </div>
+        </section>
+    </div>
+      </div>
+    </main>
+  </body>
+</html>

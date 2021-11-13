@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cross Course Project Login</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"/>
+    <meta
+      name="Login SquareEyes"
+      content="This is html and css project"/>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"/>
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <header>
+      <!--LOGO-->
+      <div class="logo">
+        <a href="index.html">
+          <img
+          src="images/SquareEyes_Logo.png"
+          alt="Logo">
+        </a>
+      </div>
+       <!--SEARCH BAR-->
+       <div class="search">
+        <input type="text" placeholder="search" />
+      </div>
+      <div class="searchnav">
+        <label for="searchicon"
+          ><i class="fas fa-search"></i> 
+        </label>
+      </div>
+      <!--NAVIGATION-->
+      <nav class="hamnav">
+        <!--HAMBURGER ICON-->
+        <label for="hamburger"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input type="checkbox" id="hamburger" />
+        <!--NAVIGATION ITEMS-->
+        <ul class="hamitems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="a.html">Producers</a></li>
+          <li><a href="movie-list.html">Movies</a></li>
+      </nav>
+       <!--CTA-BUTTONS-->
+       <div class="cta">
+        <button class="cta-login" onclick="window.location.href='login.html'">Login</button>
+        <button class="cta-signup" onclick="window.location.href='signup.html'">Sign Up</button>
+      </div>
+    </header>
+    <main class="login--main">
+      <div class="loginbox">
+          <img src="images/login.png" alt="avatar login" class="avatar">
+        <div class="text">
+          <h1>LOGIN</h1>
+          <div class="loginform">
+            <p>Already have an account? Log in below.</p>
+        <a href="signup.html">Or create a new account.</a>
+          </div>
+      <form class="loginform">
+        <label for="username">Email or Username</label><br>
+        <input type="text" class="username" name="username" placeholder="Enter username"><br>
+        <label for="pwd">Password</label><br>
+        <input type="password" class="pwd" name="pwd" placeholder="Enter password">
+        <input type="submit" class="submit" value="Login">
+      </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

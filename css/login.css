@@ -1,0 +1,70 @@
+.login--main {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 10px 0;
+}
+.loginbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 40px 30px 40px;
+  align-items: center;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -50px;
+  border: 5px solid #1a1a1a;
+}
+.loginbox h1 {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+/* .loginbox p {
+  margin: 10px 0;
+} */
+.loginbox a {
+  color: #fcad15;
+}
+.loginform {
+  margin-top: 30px;
+}
+.loginform input {
+  margin-bottom: 20px;
+}
+form label:hover {
+  cursor: text;
+}
+form label {
+  font-weight: bold;
+}
+.username,
+.pwd {
+  width: 100%;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 35px;
+  color: #fff;
+}
+.submit {
+  position: relative;
+  left: 115px;
+  width: 40%;
+  margin-top: 30px;
+  height: 40px;
+  background: #fcad15;
+  color: #600;
+  font-weight: bold;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 5px;
+  font-size: 20px;
+}

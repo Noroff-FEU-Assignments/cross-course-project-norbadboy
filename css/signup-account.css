@@ -1,0 +1,104 @@
+main{
+    padding: 40px 10px;
+}
+.watcher-account--container{
+    display: flex;
+    margin: 0 40px;
+    height: auto;
+} 
+
+.watcher-account--container section{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 1px solid grey;
+    background: #1a1a1a;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.watcher-account--body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.watcher-account--body h1{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin-left: 20px;
+}
+.watcher-account--body h2{
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.watcher-account--body p{
+    font-size: 15px;
+    margin-left: 20px;
+
+}
+.watcher-account--body form {
+    margin: 15px 100px 10px 100px;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.watcher-account--body form .input-box{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    margin-top: 25px;
+}
+.watcher-account--body button{
+    width: 250px;
+    text-transform: none;
+}
+.watcher-account--body form label{
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+.create-cta{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.watcher-account--body .input-box input{
+    width: 100%;
+    height: 25px;
+    border: 1px solid grey;
+}
+.gender-details {
+    display: flex;
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: 100;
+}
+.gender-details div{
+    display: flex;
+    margin-right: 20px;
+}
+.gender-details div input{
+    margin-right: 8px;
+}
+.watcher-account--benefits{
+    margin: 10px 85px 10px 85px;
+}
+.watcher-account--benefits div{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    margin: 30px 5px 40px 5px;
+}
+.watcher-account--benefits div p{
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 1059px) {
+    .watcher-account--container{
+        flex-direction: column;
+    }
+    .watcher-account--container section{
+        margin-bottom: 20px;
+    }
+}
