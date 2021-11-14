@@ -93,8 +93,8 @@ height: 180px;
   object-fit: cover;
 }
 .movie-intro button {
-  width: 150px;
-  margin: 0 15px 0 0;
+  width: 160px;
+  margin: 15px 15px 0px 0;
 }
 .movie-intro .buttons {
   margin: 15px 0px 0px 0px;
@@ -142,5 +142,8 @@ height: 180px;
 }
 .movie-intro .image{
   margin: 10px 0 20px 0;
+}
+.movie-intro button {
+display: block;
 }
 }

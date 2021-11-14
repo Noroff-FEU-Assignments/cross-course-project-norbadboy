@@ -349,15 +349,26 @@ transition: 0.5s;
     right: 68%;
   }
   /* slideshow */
-  .slide {
-    width: 870px;
-    height: 440px;
-  }
-  .slide img,
   .top-producers img,
   .forum img {
     height: 100%;
     width: 100%;
+  }
+  .slide img{
+    height: 550px;
+    width: 990px;
+  }
+  .slide{
+    width: 990px;
+  }
+  #r2:checked ~ .s1 {
+    margin-left: -29%;
+  }
+  #r3:checked ~ .s1 {
+    margin-left: -57%;
+  }
+  #r4:checked ~ .s1 {
+    margin-left: -85%;
   }
   /* Pictures */
   .top-producers,
@@ -399,6 +410,22 @@ transition: 0.5s;
   .cta-login,
   .cta-signup {
     display: none;
+  }
+  .slide img{
+    height: 410px;
+    width: 490px;
+  }
+  .slide{
+    width: 480px;
+  }
+  #r2:checked ~ .s1 {
+    margin-left: -14%;
+  }
+  #r3:checked ~ .s1 {
+    margin-left: -28%;
+  }
+  #r4:checked ~ .s1 {
+    margin-left: -42%;
   }
 }
 
