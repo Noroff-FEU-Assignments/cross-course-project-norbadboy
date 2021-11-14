@@ -1,7 +1,7 @@
 .login--main {
   display: flex;
   justify-content: center;
-  padding: 80px 0 10px 0;
+  padding: 80px 0;
 }
 .loginbox {
   display: flex;
@@ -25,9 +25,6 @@
   display: flex;
   justify-content: center;
 }
-/* .loginbox p {
-  margin: 10px 0;
-} */
 .loginbox a {
   color: #fcad15;
 }
@@ -54,17 +51,17 @@ form label {
   height: 35px;
   color: #fff;
 }
-.submit {
-  position: relative;
-  left: 115px;
-  width: 40%;
-  margin-top: 30px;
+.loginbox .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.loginbox .cta-login{
   height: 40px;
-  background: #fcad15;
-  color: #600;
-  font-weight: bold;
-  cursor: pointer;
-  border: transparent;
-  border-radius: 5px;
-  font-size: 20px;
+}
+@media only screen and (max-width: 559px){
+  .loginbox .cta-login{
+display: block;
+  }
 }

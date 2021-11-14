@@ -67,6 +67,14 @@
 .payment-option--container-body .details p{
   margin: 17px 0;
 }
+.payment-option--container .cta-login{
+  display: block;
+  margin-bottom: 10px;
+  height: 40px;
+}
+.payment-option--container a{
+  text-decoration: none;
+}
 
 @media only screen and (max-width: 1059px) {
   .main-payment-option{
@@ -84,4 +92,5 @@
   .payment-option--container-box div{
     text-align: center;
   }
+
 }

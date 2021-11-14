@@ -53,6 +53,10 @@ main{
 .watcher-account--body button{
     width: 250px;
     text-transform: none;
+    display: block;
+}
+.watcher-account--body a{
+    text-decoration: none;
 }
 .watcher-account--body form label{
     margin-bottom: 3px;
@@ -81,9 +85,7 @@ main{
 .gender-details div input{
     margin-right: 8px;
 }
-.watcher-account--benefits{
-    margin: 10px 85px 10px 85px;
-}
+
 .watcher-account--benefits div{
     display: flex;
     flex-direction: column;
@@ -100,5 +102,16 @@ main{
     }
     .watcher-account--container section{
         margin-bottom: 20px;
+    }
+    .watcher-account--benefits{
+        margin: 10px 85px 10px 85px;
+    }
+}
+@media only screen and (max-width: 650px){
+    .watcher-account--body form{
+        margin: 15px 30px 10px 30px;
+    }
+    .watcher-account--benefits{
+        margin: 0;
     }
 }
