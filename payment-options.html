@@ -46,9 +46,9 @@
       <!--SEARCH BAR-->
       <div class="search">
         <input type="text" placeholder="search" />
-      </div>
-      <div class="searchnav">
-        <label for="searchicon"><i class="fas fa-search"></i> </label>
+        <div class="searchnav">
+          <label for="searchicon"><i class="fa fa-search"></i> </label>
+        </div>
       </div>
       <!--NAVIGATION-->
       <nav class="hamnav">
@@ -58,8 +58,9 @@
         <!--NAVIGATION ITEMS-->
         <ul class="hamitems">
           <li><a href="index.html">Home</a></li>
-          <li><a href="a.html">Producers</a></li>
+          <li><a href="login.html">Producers</a></li>
           <li><a href="movie-list.html">Movies</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
         </ul>
       </nav>
       <!--CTA-BUTTONS-->
@@ -87,10 +88,8 @@
               <div class="details">
                 <p>Stream all of our films</p>
               </div>
-            </div>
-            <a href="payment-details.html">
-              <button class="cta-login">Pay</button>
-            </a>
+            </div class="payment-options-cta">
+              <button class="cta-login" onclick="window.location.href='payment-details'">Pay</button>            </a>
           </div>
         </section>
         <section>

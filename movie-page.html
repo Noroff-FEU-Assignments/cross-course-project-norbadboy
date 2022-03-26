@@ -46,9 +46,9 @@
       <!--SEARCH BAR-->
       <div class="search">
         <input type="text" placeholder="search" />
-      </div>
-      <div class="searchnav">
-        <label for="searchicon"><i class="fa fa-search"></i> </label>
+        <div class="searchnav">
+          <label for="searchicon"><i class="fa fa-search"></i> </label>
+        </div>
       </div>
       <!--NAVIGATION-->
       <nav class="hamnav">
@@ -58,8 +58,9 @@
         <!--NAVIGATION ITEMS-->
         <ul class="hamitems">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Producers</a></li>
+          <li><a href="login.html">Producers</a></li>
           <li><a href="movie-list.html">Movies</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
         </ul>
       </nav>
       <!--CTA-BUTTONS-->
@@ -87,12 +88,15 @@
                   nihil delectus excepturi exercitationem ipsum consequatur deleniti aliquid labore.
                 </p>
                 <div class="buttons">
-                  <a href="payment-options.html">
-                    <button class="cta-login">Pay to watch</button>
-                  </a>
-                  <a href="login.html">
-                    <button class="cta-login">Login</button>
-                  </a>
+                  <button
+                    class="cta-readmore"
+                    onclick="window.location.href='payment-options.html'"
+                  >
+                    Watch $2.99
+                  </button>
+                  <button class="cta-readmore" onclick="window.location.href='login.html'">
+                    Login
+                  </button>
                 </div>
               </div>
             </section>

@@ -1,6 +1,9 @@
 .account--main {
   padding: 40px 100px;
 }
+.account--personal-details h1 {
+  font-size: 33px;
+}
 .account--body {
   background: #1a1a1a;
   color: white;
@@ -23,7 +26,7 @@
 }
 .account--settings h2 {
   margin-right: 40px;
-  font-size: 30px;
+  font-size: 25px;
 }
 .account--personal-details h2 {
   margin-bottom: 10px;
@@ -65,6 +68,16 @@
 .account--button-text {
   margin: 20px;
 }
+.account--button-text button {
+  margin-right: 12px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  width: auto;
+  padding: 10px;
+  background-color: #292828;
+  border: 1px solid white;
+  color: #fcad15;
+}
 .dot {
   height: 100px;
   min-width: 100px;
@@ -88,6 +101,15 @@
   margin-right: 10px;
   margin-top: 15px;
 }
+.account--details-box .input-box input,
+.input-box-password input {
+  margin-bottom: 15px;
+  margin-top: 8px;
+  font-size: 16px;
+  height: 30px;
+  width: 210px;
+  letter-spacing: 0.5px;
+}
 .gender-details {
   display: flex;
   margin-top: 25px;
@@ -103,6 +125,11 @@
 }
 .input-box-password {
   margin: 10px 0;
+}
+.account--button .cta-readmore {
+  color: #fcad15;
+  padding: 10px;
+  width: auto;
 }
 
 /* TABLET */

@@ -9,23 +9,24 @@
 .movie-intro {
   border-radius: 5px;
 }
-.movie-page--container h2{
+.movie-page--container h2 {
   color: black;
-  font-size: 23px;
+  font-size: 19px;
   margin-bottom: 10px;
 }
-.movie-page--container a{
+.movie-page--container a {
   text-decoration: none;
 }
 .movie-page--container h1 {
   font-size: 35px;
   margin-bottom: 5px;
 }
-.intro-producer h2, .more-from-producer h2 {
+.intro-producer h2,
+.more-from-producer h2 {
   color: white;
   font-size: 30px;
 }
-.intro-producer p{
+.intro-producer p {
   color: white;
 }
 .movie-page--body {
@@ -43,13 +44,13 @@
   color: white;
   padding: 20px 30px;
 }
-.movie-intro p{
+.movie-intro p {
   margin-bottom: 10px;
 }
 .movie-intro section {
   display: flex;
 }
-.intro-producer--text{
+.intro-producer--text {
   margin-right: 35px;
   flex: 1;
 }
@@ -59,22 +60,21 @@
   padding: 20px 30px;
   display: flex;
 }
-.intro-producer--img{
+.intro-producer--img {
   margin-left: 0px;
   flex: 0.4;
   display: flex;
   justify-content: center;
 }
 .intro-producer--img .image {
-width: 180px;  
-height: 180px;
+  width: 180px;
+  height: 180px;
 }
-.intro-producer--img .image img{
+.intro-producer--img .image img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   border: 1px solid grey;
-  
 }
 .more-from-producer {
   grid-area: more-from-producer;
@@ -95,6 +95,9 @@ height: 180px;
 .movie-intro button {
   width: 160px;
   margin: 15px 15px 0px 0;
+  background-color: #292828;
+  border: 1px solid white;
+  color: #fcad15;
 }
 .movie-intro .buttons {
   margin: 15px 0px 0px 0px;
@@ -112,38 +115,38 @@ height: 180px;
 }
 
 @media only screen and (max-width: 1059px) {
-  .movie-page--body{
+  .movie-page--body {
     display: flex;
     flex-direction: column;
   }
-  .more-from-producer{
+  .more-from-producer {
     height: 150px;
   }
-  .movie-intro .buttons{
+  .movie-intro .buttons {
     display: flex;
     flex-direction: column;
   }
-  .movie-intro .cta-login{
-  margin-top: 20px;
-  height: 40px;
+  .movie-intro .cta-login {
+    margin-top: 20px;
+    height: 40px;
   }
-  .movie-intro p{
+  .movie-intro p {
     margin-bottom: 0px;
   }
-  .intro-producer--img .image{
-    width: 155px;  
+  .intro-producer--img .image {
+    width: 155px;
     height: 155px;
   }
 }
 
 @media only screen and (max-width: 750px) {
-.movie-intro section{
-  flex-direction: column;
-}
-.movie-intro .image{
-  margin: 10px 0 20px 0;
-}
-.movie-intro button {
-display: block;
-}
+  .movie-intro section {
+    flex-direction: column;
+  }
+  .movie-intro .image {
+    margin: 10px 0 20px 0;
+  }
+  .movie-intro button {
+    display: block;
+  }
 }

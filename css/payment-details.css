@@ -1,13 +1,13 @@
 .payment-details--body .cta-login {
   height: 40px;
-  margin:0;
+  margin: 0;
   display: block;
 }
 .payment-details--body .button {
   display: flex;
   justify-content: flex-end;
 }
-.payment-details--main{
+.payment-details--main {
   display: flex;
   justify-content: center;
   padding: 40px;
@@ -70,15 +70,15 @@
 .input-box--city {
   flex: 1;
 }
-.fa-cc-visa, .fa-cc-mastercard {
+.fa-cc-visa,
+.fa-cc-mastercard {
   font-size: 10px;
   justify-content: flex-end;
 }
-.fa-cc-visa{
+.fa-cc-visa {
   margin-left: 10px;
 }
-
-.payment-details--body .payment{
+.payment-details--body .payment {
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
@@ -86,31 +86,37 @@
   color: #fff;
   height: 25px;
 }
+.payment-details--body button {
+  background-color: #292828;
+  border: 1px solid white;
+  color: #fcad15;
+}
 
 @media only screen and (max-width: 1059px) {
-  .payment-details--main{
+  .payment-details--main {
     padding: 40px 0;
   }
   .payment-details--body {
-    top:0;
+    top: 0;
   }
   .payment-details--card-number {
-  flex-direction: column;
+    flex-direction: column;
   }
-  .input-box--expiry-number{
+  .input-box--expiry-number {
     margin: 15px 0px;
     width: 40%;
   }
-.input-box--card-number{
-  margin-bottom: 15px;
+  .input-box--card-number {
+    margin-bottom: 15px;
+  }
 }
-}
-@media only screen and (max-width:600px) {
-  .payment-details--billing{
-    flex-direction: column;  
+@media only screen and (max-width: 600px) {
+  .payment-details--billing {
+    flex-direction: column;
     margin: 5px 0;
   }
-  .input-box--street, .input-box--city{
+  .input-box--street,
+  .input-box--city {
     margin: 10px 0;
   }
   .payment-details--body .button {

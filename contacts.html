@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Payment Details SquareEyes</title>
+    <title>Homepage SquareEyes</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Payment-details SquareEyes" content="This is html and css project" />
+    <meta name="Homepage SquareEyes" content="This is html and css project" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/payment-details.css" />
+    <link rel="stylesheet" href="/css/contacts.css" />
+
     <!-- Hotjar Tracking Code for https://elated-edison-c91788.netlify.app/ -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -69,58 +70,35 @@
         <button class="cta-signup" onclick="window.location.href='signup.html'">Sign Up</button>
       </div>
     </header>
-    <main class="payment-details--main">
-      <div class="payment-details--body">
-        <section class="payment-details--box">
-          <h1>Payment Details</h1>
-          <div class="input-box--card">
-            <label for="name on card">Name on card</label><br />
-            <input type="text" class="payment" />
-          </div>
-          <div class="payment-details--card-number">
-            <div class="input-box--card-number">
-              <label for="card number"
-                >Card number
-                <i class="fa fa-cc-visa" aria-hidden="true"></i>
-                <i class="fa fa-cc-mastercard" aria-hidden="true"></i> </label
-              ><br />
-              <input type="text" class="payment" />
+    <main>
+      <div class="contacts--container">
+        <div class="contacts--body">
+          <h1>Contact Us</h1>
+          <form id="contactForm">
+            <div>
+              <label>
+                Name or Username (required)
+                <input name="name" id="name" />
+              </label>
+              <div class="form-error" id="nameError">Please enter your name</div>
             </div>
-            <div class="input-box--expiry-number">
-              <label for="expiry">Expiry</label><br />
-              <input type="text" class="payment" />
+            <div>
+              <label>
+                Email (required)
+                <input name="email" id="email" />
+              </label>
+              <div class="form-error" id="emailError">Please enter a valid email address</div>
             </div>
-            <div class="input-box--expiry-number">
-              <label for="cvv">CVV</label><br />
-              <input type="text" class="payment" />
+            <div>
+              <label>
+                Subject (minimum 10 characters)
+                <input name="subject" id="subject" />
+              </label>
+              <div class="form-error" id="subjectError">Please enter a valid length</div>
             </div>
-          </div>
-        </section>
-        <section class="payment-details--box">
-          <h1>Billing Address</h1>
-          <div class="payment-details--billing">
-            <div class="input-box--street">
-              <label for="street adress">Street Adress</label><br />
-              <input type="text" class="payment" />
-            </div>
-            <div class="input-box--city">
-              <label for="city">City</label><br />
-              <input type="text" class="payment" />
-            </div>
-          </div>
-          <div class="payment-details--billing">
-            <div class="input-box--street">
-              <label for="state/province">State/Province</label><br />
-              <input type="text" class="payment" />
-            </div>
-            <div class="input-box--city">
-              <label for="zip code">Zip Code</label><br />
-              <input type="text" class="payment" />
-            </div>
-          </div>
-        </section>
-        <div class="button">
-          <button class="cta-login">Pay</button>
+            <button class="submit">Submit</button>
+          </form>
+          <script src="../js/contacts.js"></script>
         </div>
       </div>
     </main>

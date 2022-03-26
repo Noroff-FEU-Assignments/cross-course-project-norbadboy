@@ -45,9 +45,9 @@
       <!--SEARCH BAR-->
       <div class="search">
         <input type="text" placeholder="search" />
-      </div>
-      <div class="searchnav">
-        <label for="searchicon"><i class="fa fa-search"></i> </label>
+        <div class="searchnav">
+          <label for="searchicon"><i class="fa fa-search"></i> </label>
+        </div>
       </div>
       <!--NAVIGATION-->
       <nav class="hamnav">
@@ -57,8 +57,9 @@
         <!--NAVIGATION ITEMS-->
         <ul class="hamitems">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Producers</a></li>
+          <li><a href="login.html">Producers</a></li>
           <li><a href="movie-list.html">Movies</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
         </ul>
       </nav>
       <!--CTA-BUTTONS-->
@@ -80,8 +81,8 @@
             <h4 class="intro2">SquareEyes is a platform connecting film-lovers.</h4>
           </div>
           <div>
-            <button class="cta-readmore">
-              <a href="#">Read more</a>
+            <button class="cta-readmore" onclick="window.location.href='movie-page.html'">
+              Read more
             </button>
           </div>
         </div>
@@ -105,19 +106,30 @@
             <div class="slide s1">
               <a href="movie-page.html">
                 <img src="images/aliens.jpg" alt="Aliens movie" />
+                <div class="centered">Aliens</div>
               </a>
             </div>
             <div class="slide">
-              <img src="images/abandoned.jpg" alt="Abandoned Place movie" />
+              <a href="movie-page.html">
+                <img src="images/abandoned.jpg" alt="Abandoned Place movie" />
+                <div class="centered-1">Abandoned</div>
+              </a>
             </div>
             <div class="slide">
-              <img src="images/hacking.jpg" alt="Hacking movie" />
+              <a href="movie-page.html">
+                <img src="images/hacking.jpg" alt="Hacking movie" />
+                <div class="centered-2">Hacking</div>
+              </a>
             </div>
             <div class="slide">
-              <img src="images/nature.jpg" alt="Nature movie" />
+              <a href="movie-page.html">
+                <img src="images/nature.jpg" alt="Nature movie" />
+                <div class="centered-3">Nature</div>
+              </a>
             </div>
           </div>
         </div>
+
         <div class="top-movies-nav">
           <label for="r1" class="bar"></label>
           <label for="r2" class="bar"></label>
@@ -129,6 +141,7 @@
         <h2>Top Producers</h2>
         <div class="top-producers">
           <img src="images/man.jpg" alt="Producer" />
+          <div class="centered-4">Tom Holla</div>
         </div>
       </section>
       <section class="content3">
@@ -139,19 +152,19 @@
           </div>
           <hr />
           <div>
-            <h3>Top ten movies</h3>
+            <h3>Top ten producers</h3>
           </div>
           <hr />
           <div>
-            <h3>Top ten movies</h3>
+            <h3>Movies of the year</h3>
           </div>
           <hr />
           <div>
-            <h3>Top ten movies</h3>
+            <h3>Producers of the year</h3>
           </div>
           <hr />
           <div>
-            <h3>Top ten movies</h3>
+            <h3>Monthly awards</h3>
           </div>
           <hr />
           <div>
