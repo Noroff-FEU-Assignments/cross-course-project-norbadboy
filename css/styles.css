@@ -420,6 +420,18 @@ aside {
   #r4:checked ~ .s1 {
     margin-left: -85%;
   }
+  .centered {
+    padding-right: 120px;
+  }
+  .centered-1 {
+    padding-right: 150px;
+  }
+  .centered-2 {
+    padding-right: 60px;
+  }
+  .centered-3 {
+    padding-left: 80px;
+  }
   /* Pictures */
   .top-producers,
   .forum {
@@ -429,6 +441,9 @@ aside {
 
 /* MOBILE */
 @media only screen and (max-width: 550px) {
+  .header {
+    padding: 10px 20px;
+  }
   .container {
     height: 100%;
     padding: 40px 30px;
