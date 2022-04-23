@@ -70,18 +70,18 @@
       </div>
     </header>
     <main class="movie-page--main">
+      <div class="movie-page--loading">Fetching movie data ...</div>
       <div class="movie-page--container">
         <a href="movie-list.html">
-          <h2>Home / Film-list / Aliens Invasion</h2>
+          <h2 class="movie-page--breadcrumb"></h2>
         </a>
         <div class="movie-page--body">
           <div class="movie-intro">
             <section>
-              <div class="image">
-                <img src="images/aliens.jpg" alt="Aliens Invasion" />
+              <div class="movie-page--image">
               </div>
               <div class="intro-info">
-                <h1>Aliens Invasion</h1>
+                <h1 class="movie-page--title">Aliens Invasion</h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus nobis in
                   ab, itaque eum doloribus consequatur. Incidunt perspiciatis quaerat sit illo,
@@ -133,5 +133,6 @@
         </div>
       </div>
     </main>
+    <script src="/js/movie-page.js"></script>
   </body>
 </html>

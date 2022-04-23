@@ -17,11 +17,12 @@
   padding: 25px 45px 30px 45px;
   border-radius: 5px;
 }
-.movie-list h1 {
+.movie-list .title {
   font-size: 26px;
   display: flex;
   justify-content: flex-start;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 .movie-list--container h2 {
   font-size: 19px;

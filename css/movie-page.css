@@ -2,8 +2,11 @@
   padding: 20px 40px;
 }
 .movie-page--container {
-  display: flex;
+  display: none;
   flex-direction: column;
+}
+.movie-page--loading {
+  height: 800px;
 }
 .movie-page--main section,
 .movie-intro {
@@ -82,7 +85,7 @@
   color: white;
   padding: 20px 30px;
 }
-.movie-intro .image {
+.movie-page--image {
   margin: 10px 20px 0px 0px;
 }
 .movie-intro img {
