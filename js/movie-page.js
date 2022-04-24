@@ -10,6 +10,7 @@ const moviePageLoading = document.querySelector(".movie-page--loading");
 const moviePageContainer = document.querySelector(".movie-page--container");
 const movieIntroImage = document.querySelector(".movie-page--image");
 const movieIntroTitle = document.querySelector(".movie-page--title");
+const movieIntroInfo = document.querySelector(".movie-page--movie-info");
 
 async function getMovieById() {
   try {
@@ -22,8 +23,8 @@ async function getMovieById() {
     movieIntroImage.innerHTML = `<img src=${movieInfo.images[0].src} alt=${movieInfo.images[0].alt} />
     `;
 
-    movieIntroTitle.innerText = movieInfo.name
-    ;
+    movieIntroTitle.innerText = movieInfo.name;
+    movieIntroInfo.innerText = movieInfo.short_description;
 
     moviePageLoading.style.display = "none";
     moviePageContainer.style.display = "flex";
