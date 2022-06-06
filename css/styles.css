@@ -13,7 +13,6 @@ body {
   background: -moz-linear-gradient(top, #ffbc68, #ff8b0d);
   background: linear-gradient(to bottom, #ffbc68, #ff8b0d);
 }
-
 .container {
   padding: 40px 40px;
   display: grid;
@@ -548,3 +547,4 @@ aside {
 .header {
   font-size: 40px;
 }
+

@@ -1,7 +1,6 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const movieId = urlParams.get("id");
-console.log(movieId);
 const movieUrl = `https://student-noroff.one/CrossCourse/wp-json/wc/store/products/${movieId}`;
 console.log(movieUrl);
 
