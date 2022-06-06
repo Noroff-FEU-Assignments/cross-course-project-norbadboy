@@ -6,13 +6,16 @@ A project that cross multiple courses such as design, HTML & CSS and JavaScript.
 
 ## Description
 
-This project involves the use 
+This project aim is to build a video streaming website where you can purchase high-quality videos directly from the people who make them. The users of this website want to purchase videos right away, which will allow them to watch it online.
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+### Site architecture
+- Home
+- List of Videos
+- A video page showing the product details
+- A checkout page
+- A checkout success
+- About
+- Contact
 
 ## Built With
 
