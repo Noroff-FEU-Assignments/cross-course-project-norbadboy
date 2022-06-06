@@ -1,12 +1,12 @@
-# Cross-course Project
+# SquareEyes - a cross-course project
 
 ![image](https://github.com/Noroff-FEU-Assignments/cross-course-project-norbadboy/blob/main/images/Homepage%20SquareEyes.png)
 
-A project that cross multiple courses such as design, HTML & CSS and JavaScript. 
+A project that showcase skills across multiple courses such as design, HTML & CSS and JavaScript. 
 
 ## Description
 
-This project aim is to build a video streaming website where you can purchase high-quality videos directly from the people who make them. The users of this website want to purchase videos right away, which will allow them to watch it online.
+This project aims to build a video streaming website where people can purchase high-quality videos directly from other people who make them. The users of this website want to purchase videos right away, which will allow them to watch it online.
 
 ### Site architecture
 - Home
