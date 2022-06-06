@@ -19,8 +19,6 @@ This project aims to build a video streaming website where people can purchase h
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
 - [Adobe XD](https://www.adobe.com/no/products/xd.html)
 - HTML
 - CSS
