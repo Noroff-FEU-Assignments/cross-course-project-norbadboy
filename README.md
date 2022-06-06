@@ -1,12 +1,12 @@
-# Your project title
+# Cross-course Project
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://github.com/Noroff-FEU-Assignments/cross-course-project-norbadboy/blob/main/images/Homepage%20SquareEyes.png)
 
-A simple overview of the use/purpose of the project.
+A project that cross multiple courses such as design, HTML & CSS and JavaScript. 
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This project involves the use 
 
 You can add some bullet points if you'd like to:
 
@@ -18,8 +18,10 @@ You can add some bullet points if you'd like to:
 
 You can list a the tech stack that you've used over here
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- [Adobe XD](https://www.adobe.com/no/products/xd.html)
+- [HTML]
+- [CSS]
+- [JavaScript](https://www.javascript.com/)
 
 ## Getting Started
 
@@ -30,7 +32,7 @@ This is where you list how to get the project started. It typically just include
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-norbadboy.git
 ```
 
 2. Install the dependencies:
@@ -59,7 +61,7 @@ This is where you can leave your social links for people to contact you, such as
 
 [My Twitter page](www.twitter.com)
 
-[My LinkedIn page](www.linkedin.com)
+[My LinkedIn page](https://www.linkedin.com/in/thong-trong-ho-bb2100b4)
 
 ## License
 
