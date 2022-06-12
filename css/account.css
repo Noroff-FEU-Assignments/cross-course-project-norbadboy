@@ -1,0 +1,199 @@
+.account--main {
+  padding: 40px 100px;
+}
+.account--personal-details h1 {
+  font-size: 33px;
+}
+.account--body {
+  background: #1a1a1a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.account--body label {
+  cursor: text;
+}
+.account--main button {
+  width: 150px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: block;
+}
+.account--settings {
+  display: flex;
+  padding: 10px;
+}
+.account--settings h2 {
+  margin-right: 40px;
+  font-size: 25px;
+}
+.account--personal-details h2 {
+  margin-bottom: 10px;
+}
+.account--body .hr-orange {
+  border: 3px solid orange;
+  width: 200px;
+  margin-left: 10px;
+}
+.account--body .hr-white,
+.hr-password {
+  border: 1px solid white;
+}
+.account--personal-details,
+.account--password {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  padding: 20px 60px;
+  border: 1px solid white;
+}
+.account--profile-pic {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  margin-top: 10px;
+}
+.account--profile-pic-body {
+  display: flex;
+  border: 1px solid white;
+  width: 75%;
+  padding: 5px 0;
+  justify-content: center;
+}
+.account--profile-pic-body .button {
+  display: flex;
+  margin-right: 20px;
+}
+.account--button-text {
+  margin: 20px;
+}
+.account--button-text button {
+  margin-right: 12px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  width: auto;
+  padding: 10px;
+  background-color: #292828;
+  border: 1px solid white;
+  color: #fcad15;
+}
+.dot {
+  height: 100px;
+  min-width: 100px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 20px;
+  background: white;
+}
+.account--details-box {
+  display: flex;
+  flex-direction: column;
+}
+.account--details-box .name-box {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+}
+.account--details-box .input-box {
+  flex: 1;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.account--details-box .input-box input,
+.input-box-password input {
+  margin-bottom: 15px;
+  margin-top: 8px;
+  font-size: 16px;
+  height: 30px;
+  width: 210px;
+  letter-spacing: 0.5px;
+}
+.gender-details {
+  display: flex;
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 100;
+}
+.gender-details div {
+  display: flex;
+  margin-left: 10px;
+}
+.gender-details div input {
+  margin-right: 8px;
+}
+.input-box-password {
+  margin: 10px 0;
+}
+.account--button .cta-readmore {
+  color: #fcad15;
+  padding: 10px;
+  width: auto;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1159px) {
+  .account--main {
+    padding: 40px;
+  }
+  .account--settings h2 {
+    font-size: 25px;
+  }
+  .account--body .hr-orange {
+    width: 170px;
+  }
+  .account--profile-pic-body {
+    width: 100%;
+  }
+  .account--profile-pic-body .button {
+    flex-direction: column;
+  }
+  .account--personal-details,
+  .account--password {
+    padding: 20px 25px;
+  }
+  .dot--body {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+  }
+  .dot {
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .account--button-text {
+    flex: 2;
+  }
+  .account--button-text .button {
+    margin-bottom: 20px;
+  }
+
+  .account--main button {
+    height: 50px;
+    width: 200px;
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 690px) {
+  .account--profile-pic-body {
+    flex-direction: column;
+    width: 100%;
+  }
+  .dot--body {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .dot {
+    margin: 20px 0;
+  }
+  .account--settings h2 {
+    font-size: 20px;
+  }
+  .account--body .hr-orange {
+    width: 90px;
+  }
+}

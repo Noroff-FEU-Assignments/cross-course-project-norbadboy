@@ -1,0 +1,126 @@
+.payment-details--body .cta-login {
+  height: 40px;
+  margin: 0;
+  display: block;
+}
+.payment-details--body .button {
+  display: flex;
+  justify-content: flex-end;
+}
+.payment-details--main {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.payment-details--body {
+  background: #1a1a1a;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 60px;
+}
+.payment-details--box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.payment-details--box h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #fcad15;
+  font-weight: normal;
+}
+.payment-details--body label {
+  cursor: text;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.payment-details--body br {
+  margin-bottom: 2px;
+}
+.payment-details--card-number {
+  display: flex;
+}
+.input-box--card-number {
+  flex: 2.2;
+}
+.input-box--expiry-number {
+  flex: 1;
+  margin-left: 35px;
+}
+.payment-details--box input {
+  width: 100%;
+}
+
+.input-box--card,
+.payment-details--billing,
+.payment-details--card-number {
+  margin: 15px 0;
+}
+
+.payment-details--billing {
+  display: flex;
+}
+.input-box--street {
+  flex: 1;
+  margin-right: 35px;
+}
+.input-box--city {
+  flex: 1;
+}
+.fa-cc-visa,
+.fa-cc-mastercard {
+  font-size: 10px;
+  justify-content: flex-end;
+}
+.fa-cc-visa {
+  margin-left: 10px;
+}
+.payment-details--body .payment {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  height: 25px;
+}
+.payment-details--body button {
+  background-color: #292828;
+  border: 1px solid white;
+  color: #fcad15;
+}
+
+@media only screen and (max-width: 1059px) {
+  .payment-details--main {
+    padding: 40px 0;
+  }
+  .payment-details--body {
+    top: 0;
+  }
+  .payment-details--card-number {
+    flex-direction: column;
+  }
+  .input-box--expiry-number {
+    margin: 15px 0px;
+    width: 40%;
+  }
+  .input-box--card-number {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .payment-details--billing {
+    flex-direction: column;
+    margin: 5px 0;
+  }
+  .input-box--street,
+  .input-box--city {
+    margin: 10px 0;
+  }
+  .payment-details--body .button {
+    display: flex;
+    justify-content: center;
+  }
+}

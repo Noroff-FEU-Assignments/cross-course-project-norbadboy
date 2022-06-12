@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payment Details SquareEyes</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Payment-details SquareEyes" content="This is html and css project" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@100&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/payment-details.css" />
+    <!-- Hotjar Tracking Code for https://elated-edison-c91788.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2885006, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <!--LOGO-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/SquareEyes_Logo.png" alt="Logo" />
+        </a>
+      </div>
+      <!--SEARCH BAR-->
+      <div class="search">
+        <input type="text" placeholder="search" />
+        <div class="searchnav">
+          <label for="searchicon"><i class="fa fa-search"></i> </label>
+        </div>
+      </div>
+      <!--NAVIGATION-->
+      <nav class="hamnav">
+        <!--HAMBURGER ICON-->
+        <label for="hamburger"><i class="fa fa-bars"></i></label>
+        <input type="checkbox" id="hamburger" />
+        <!--NAVIGATION ITEMS-->
+        <ul class="hamitems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Producers</a></li>
+          <li><a href="movie-list.html">Movies</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+      <!--CTA-BUTTONS-->
+      <div class="cta">
+        <button class="cta-login" onclick="window.location.href='login.html'">Login</button>
+        <button class="cta-signup" onclick="window.location.href='signup.html'">Sign Up</button>
+      </div>
+    </header>
+    <main class="payment-details--main">
+      <div class="payment-details--body">
+        <section class="payment-details--box">
+          <h1>Payment Details</h1>
+          <div class="input-box--card">
+            <label for="name on card">Name on card</label><br />
+            <input type="text" class="payment" />
+          </div>
+          <div class="payment-details--card-number">
+            <div class="input-box--card-number">
+              <label for="card number"
+                >Card number
+                <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                <i class="fa fa-cc-mastercard" aria-hidden="true"></i> </label
+              ><br />
+              <input type="text" class="payment" />
+            </div>
+            <div class="input-box--expiry-number">
+              <label for="expiry">Expiry</label><br />
+              <input type="text" class="payment" />
+            </div>
+            <div class="input-box--expiry-number">
+              <label for="cvv">CVV</label><br />
+              <input type="text" class="payment" />
+            </div>
+          </div>
+        </section>
+        <section class="payment-details--box">
+          <h1>Billing Address</h1>
+          <div class="payment-details--billing">
+            <div class="input-box--street">
+              <label for="street adress">Street Adress</label><br />
+              <input type="text" class="payment" />
+            </div>
+            <div class="input-box--city">
+              <label for="city">City</label><br />
+              <input type="text" class="payment" />
+            </div>
+          </div>
+          <div class="payment-details--billing">
+            <div class="input-box--street">
+              <label for="state/province">State/Province</label><br />
+              <input type="text" class="payment" />
+            </div>
+            <div class="input-box--city">
+              <label for="zip code">Zip Code</label><br />
+              <input type="text" class="payment" />
+            </div>
+          </div>
+        </section>
+        <div class="button">
+          <button class="cta-login">Pay</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

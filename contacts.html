@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homepage SquareEyes</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Homepage SquareEyes" content="This is html and css project" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@100&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/contacts.css" />
+
+    <!-- Hotjar Tracking Code for https://elated-edison-c91788.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2885006, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <!--LOGO-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/SquareEyes_Logo.png" alt="Logo" />
+        </a>
+      </div>
+      <!--SEARCH BAR-->
+      <div class="search">
+        <input type="text" placeholder="search" />
+        <div class="searchnav">
+          <label for="searchicon"><i class="fa fa-search"></i> </label>
+        </div>
+      </div>
+      <!--NAVIGATION-->
+      <nav class="hamnav">
+        <!--HAMBURGER ICON-->
+        <label for="hamburger"><i class="fa fa-bars"></i></label>
+        <input type="checkbox" id="hamburger" />
+        <!--NAVIGATION ITEMS-->
+        <ul class="hamitems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Producers</a></li>
+          <li><a href="movie-list.html">Movies</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+      <!--CTA-BUTTONS-->
+      <div class="cta">
+        <button class="cta-login" onclick="window.location.href='login.html'">Login</button>
+        <button class="cta-signup" onclick="window.location.href='signup.html'">Sign Up</button>
+      </div>
+    </header>
+    <main>
+      <div class="contacts--container">
+        <div class="contacts--body">
+          <h1>Contact Us</h1>
+          <form id="contactForm">
+            <div>
+              <label>
+                Name or Username (required)
+                <input name="name" id="name" />
+              </label>
+              <div class="form-error" id="nameError">Please enter your name</div>
+            </div>
+            <div>
+              <label>
+                Email (required)
+                <input name="email" id="email" />
+              </label>
+              <div class="form-error" id="emailError">Please enter a valid email address</div>
+            </div>
+            <div>
+              <label>
+                Subject (minimum 10 characters)
+                <input name="subject" id="subject" />
+              </label>
+              <div class="form-error" id="subjectError">Please enter a valid length</div>
+            </div>
+            <button class="submit">Submit</button>
+          </form>
+          <script src="/js/contacts.js"></script>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

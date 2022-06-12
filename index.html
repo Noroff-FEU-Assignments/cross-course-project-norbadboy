@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homepage SquareEyes</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Homepage SquareEyes" content="This is html and css project" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@100&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Hotjar Tracking Code for https://elated-edison-c91788.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2885006, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <!--LOGO-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/SquareEyes_Logo.png" alt="Logo" />
+        </a>
+      </div>
+      <!--SEARCH BAR-->
+      <div class="search">
+        <input type="text" placeholder="search" />
+        <div class="searchnav">
+          <label for="searchicon"><i class="fa fa-search"></i> </label>
+        </div>
+      </div>
+      <!--NAVIGATION-->
+      <nav class="hamnav">
+        <!--HAMBURGER ICON-->
+        <label for="hamburger"><i class="fa fa-bars"></i></label>
+        <input type="checkbox" id="hamburger" />
+        <!--NAVIGATION ITEMS-->
+        <ul class="hamitems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Producers</a></li>
+          <li><a href="movie-list.html">Movies</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+      <!--CTA-BUTTONS-->
+      <div class="cta">
+        <button class="cta-login" onclick="window.location.href='login.html'">Login</button>
+        <button class="cta-signup" onclick="window.location.href='signup.html'">Sign Up</button>
+      </div>
+    </header>
+    <div class="container">
+      <main class="main-home">
+        <h1>Introduction</h1>
+        <div class="main-home--body">
+          <div class="intro1">
+            <p>Love making films and money?</p>
+            <p>Looking for high quality short films to watch?</p>
+            <p>Want to support upcoming filmakers?</p>
+          </div>
+          <div>
+            <h4 class="intro2">SquareEyes is a platform connecting film-lovers.</h4>
+          </div>
+          <div>
+            <button class="cta-readmore" onclick="window.location.href='movie-page.html'">
+              Read more
+            </button>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <h2>Upcoming Movies</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quas culpa quam alias, quia
+          earum sit tenetur nihil commodi explicabo quasi, possimus adipisci asperiores cupiditate
+          consequatur perspiciatis ad expedita necessitatibus?
+        </p>
+      </aside>
+      <section class="content1">
+        <h2>Top Movies</h2>
+        <div class="slideshow middle">
+          <div class="top-movies">
+            <input type="radio" name="r" id="r1" checked />
+            <input type="radio" name="r" id="r2" />
+            <input type="radio" name="r" id="r3" />
+            <input type="radio" name="r" id="r4" />
+            <div class="slide s1">
+              <a href="movie-page.html">
+                <img src="images/aliens.jpg" alt="Aliens movie" />
+                <div class="centered">Aliens</div>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="movie-page.html">
+                <img src="images/abandoned.jpg" alt="Abandoned Place movie" />
+                <div class="centered-1">Abandoned</div>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="movie-page.html">
+                <img src="images/hacking.jpg" alt="Hacking movie" />
+                <div class="centered-2">Hacking</div>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="movie-page.html">
+                <img src="images/nature.jpg" alt="Nature movie" />
+                <div class="centered-3">Nature</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="top-movies-nav">
+          <label for="r1" class="bar"></label>
+          <label for="r2" class="bar"></label>
+          <label for="r3" class="bar"></label>
+          <label for="r4" class="bar"></label>
+        </div>
+      </section>
+      <section class="content2">
+        <h2>Top Producers</h2>
+        <div class="top-producers">
+          <img src="images/man.jpg" alt="Producer" />
+          <div class="centered-4">Tom Holla</div>
+        </div>
+      </section>
+      <section class="content3">
+        <h2>Forums</h2>
+        <div class="forum">
+          <div>
+            <h3>Top ten movies</h3>
+          </div>
+          <hr />
+          <div>
+            <h3>Top ten producers</h3>
+          </div>
+          <hr />
+          <div>
+            <h3>Movies of the year</h3>
+          </div>
+          <hr />
+          <div>
+            <h3>Producers of the year</h3>
+          </div>
+          <hr />
+          <div>
+            <h3>Monthly awards</h3>
+          </div>
+          <hr />
+          <div>
+            <h3>Top ten movies</h3>
+          </div>
+          <hr />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

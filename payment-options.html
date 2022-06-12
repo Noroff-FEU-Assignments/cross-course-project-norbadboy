@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payment Options SquareEyes</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="payment-options SquareEyes" content="This is html and css project" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@100&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/payment-options.css" />
+    <!-- Hotjar Tracking Code for https://elated-edison-c91788.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2885006, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <!--LOGO-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/SquareEyes_Logo.png" alt="Logo" />
+        </a>
+      </div>
+      <!--SEARCH BAR-->
+      <div class="search">
+        <input type="text" placeholder="search" />
+        <div class="searchnav">
+          <label for="searchicon"><i class="fa fa-search"></i> </label>
+        </div>
+      </div>
+      <!--NAVIGATION-->
+      <nav class="hamnav">
+        <!--HAMBURGER ICON-->
+        <label for="hamburger"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger" />
+        <!--NAVIGATION ITEMS-->
+        <ul class="hamitems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Producers</a></li>
+          <li><a href="movie-list.html">Movies</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+      <!--CTA-BUTTONS-->
+      <div class="cta">
+        <button class="cta-login" onclick="window.location.href='login.html'">Login</button>
+        <button class="cta-signup" onclick="window.location.href='signup.html'">Sign Up</button>
+      </div>
+    </header>
+    <!-- Payment options -->
+    <main class="main-payment-option">
+      <div class="payment-option--container">
+        <section>
+          <div class="payment-option--container-header"></div>
+          <div class="payment-option--container-body">
+            <div class="payment-option--container-box">
+              <div>
+                <h2>Pay per view</h2>
+                <h1>$4 for 1 view</h1>
+              </div>
+              <hr />
+              <div class="access">
+                <p>Access 1 film</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p>Stream all of our films</p>
+              </div>
+            </div class="payment-options-cta">
+              <button class="cta-login" onclick="window.location.href='payment-details'">Pay</button>            </a>
+          </div>
+        </section>
+        <section>
+          <div class="payment-option--container-header"></div>
+          <div class="payment-option--container-body">
+            <div class="payment-option--container-box">
+              <div>
+                <h2>Day Pass</h2>
+                <h1>$10 for 1 day</h1>
+              </div>
+              <hr />
+              <div>
+                <p>24 hours of unrestricted access</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p>Stream all of our films</p>
+                <p>Access members only content</p>
+              </div>
+            </div>
+            <a href="payment-details.html">
+              <button class="cta-login">Pay</button>
+            </a>
+          </div>
+        </section>
+        <section class="payment-option--container-section__popular">
+          <div class="payment-option--container-header">
+            <h3>Most Popular</h3>
+          </div>
+          <div class="payment-option--container-body">
+            <div class="payment-option--container-box">
+              <div>
+                <h2>Yearly Access</h2>
+                <h1>$120 for 1 year</h1>
+              </div>
+              <hr />
+              <div>
+                <p>Unlimited access +</p>
+                <p>Forums</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p>Stream all of our films</p>
+                <p>Access members only content</p>
+                <p>Access to forums and discussions</p>
+                <p>Free for ads</p>
+              </div>
+            </div>
+            <a href="payment-details.html">
+              <button class="cta-login">Pay</button>
+            </a>
+          </div>
+        </section>
+        <section>
+          <div class="payment-option--container-header"></div>
+          <div class="payment-option--container-body">
+            <div class="payment-option--container-box">
+              <div>
+                <h2>Monthly Access</h2>
+                <h1>$20 for 1 month</h1>
+              </div>
+              <hr />
+              <div>
+                <p>Unlimited access for 1 month</p>
+              </div>
+              <hr />
+              <div class="details">
+                <p>Stream all of our films</p>
+                <p>Access members only content</p>
+                <p>Free for ads</p>
+              </div>
+            </div>
+            <a href="payment-details.html">
+              <button class="cta-login">Pay</button>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
